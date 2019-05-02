@@ -26,7 +26,7 @@ angular.module('campaignApp')
 
         .state('dashboard.live', {
           url: '/live',
-          templateUrl: 'app/components/Dashboard/live/live.view.html',
+          templateUrl: 'app/components/dashboard/live/live.view.html',
           controller: 'LiveController',
           controllerAs: 'LiveCtrl'
         })
