@@ -8,6 +8,12 @@ Here we have three tabs to view all campaign.
   
 - Click on View button to view details
 - Click on calender icon to change date  
+
+# Development
+
+- Clone this repo
+- Run command - npm install, bower install to install all dependencies
+- Run command - node index.js to run application on port 3000
   
 # Contribution
 
