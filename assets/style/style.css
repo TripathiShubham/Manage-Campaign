@@ -88,6 +88,11 @@ ul {
     display: none;
 }
 
+.tabs:after {
+    content: '';
+    flex: 0 0 10px;
+  }
+
 .tab-h {
     min-width: 200px;
     background-color: #81c581;
