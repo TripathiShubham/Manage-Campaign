@@ -12,14 +12,14 @@ angular.module('campaignApp')
 
         .state('dashboard', {
           url: '/dashboard',
-          templateUrl: 'app/components/Dashboard/dashboard.view.html',
+          templateUrl: 'app/components/dashboard/dashboard.view.html',
           controller: 'DashboardController',
           controllerAs: 'DashCtrl'
         })
 
         .state('dashboard.home', {
           url: '/home',
-          templateUrl: 'app/components/Dashboard/home/home.view.html',
+          templateUrl: 'app/components/dashboard/home/home.view.html',
           controller: 'HomeController',
           controllerAs: 'HomeCtrl'
         })
@@ -33,7 +33,7 @@ angular.module('campaignApp')
 
         .state('dashboard.past', {
           url: '/past',
-          templateUrl: 'app/components/Dashboard/past/past.view.html',
+          templateUrl: 'app/components/dashboard/past/past.view.html',
           controller: 'PastController',
           controllerAs: 'PastCtrl'
         })
