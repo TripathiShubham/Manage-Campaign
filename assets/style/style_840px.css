@@ -1,0 +1,22 @@
+.heading {
+    font-size: x-large;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tab-h {
+    color: white;
+    padding: 12px;
+    margin: 0px 15px;
+    font-size: smaller;
+}
+
+.tabs {
+    justify-content: unset;
+}
+
+.mbody {
+    width: 50%;
+    top: 40px;
+    padding: 15px;
+}

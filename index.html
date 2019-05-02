@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- BEGIN HEAD -->
+
+<head>
+    <meta charset="utf-8" />
+    <title>Manage Campaign</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Manage Campaign" name="description" />
+    <meta content="Shubham Tripathi" name="author" />
+
+    <!-- GLOBAL MANDATORY STYLES -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" />
+
+    <link href="assets/style/style.css" rel="stylesheet">
+    <link rel='stylesheet' media='screen and (max-width: 480px)' href='assets/style/style_480px.css' />
+    <link rel='stylesheet' media='screen and (min-width: 481px) and (max-width: 840px)'
+    href='assets/style/style_840px.css' />
+    <link href="assets/style/default.css" rel="stylesheet">
+    <link href="assets/style/default.date.css" rel="stylesheet">
+
+</head>
+<!-- END HEAD -->
+
+<!-- BODY -->
+
+<body ng-app="campaignApp" ng-controller="MainController as MainCtrl">
+
+    <div ui-view></div>
+
+    <script src="assets/lib/angular/angular.min.js"></script>
+    <script src="assets/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/assets/lib/jquery/dist/jquery.min.js"></script>
+    <script src="assets/js/picker.js"></script>
+    <script src="assets/js/picker.date.js"></script>
+
+    <script src="app/app.module.js"></script>
+    <script src="app/app.routes.js"></script>
+
+    <script src="app/components/service/data.service.js"></script>
+
+    <script src="app/components/mainController/main.controller.js"></script>
+    <script src="app/components/dashboard/home/home.controller.js"></script>
+    <script src="app/components/dashboard/live/live.controller.js"></script>
+    <script src="app/components/dashboard/past/past.controller.js"></script>
+    <script src="app/components/dashboard/dashboard.controller.js"></script>
+
+</body>
+<!-- END BODY -->
+
+</html>

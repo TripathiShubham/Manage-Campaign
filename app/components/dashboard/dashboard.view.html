@@ -1,0 +1,16 @@
+<div>
+    <div ng-include="'app/shared/partials/header/header.view.html'" class="header-include"></div>
+
+    <div class="flex dashboard">
+        <div class="heading">Manage <strong>Campaigns</strong></div>
+        <div class="flex tabs">
+            <div class="tab-h uppercase pointer" ng-class="{current:DashCtrl.isActive('/dashboard/home')}"
+                ui-sref="dashboard.home">Upcoming Campaigns</div>
+            <div class="tab-h uppercase pointer" ng-class="{current:DashCtrl.isActive('/dashboard/live')}"
+                ui-sref="dashboard.live">Live Campaigns</div>
+            <div class="tab-h uppercase pointer" ng-class="{current:DashCtrl.isActive('/dashboard/past')}"
+                ui-sref="dashboard.past">Past Campaigns</div>
+        </div>
+    </div>
+    <div ui-view class="full-width"></div>
+</div>

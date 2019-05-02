@@ -1,0 +1,57 @@
+<div class="wrapper">
+    <div class="table table--5cols table--collapse">
+        <div class="table-row table-row--head">
+            <div class="table-cell date-cell column-heading">Date</div>
+            <div class="table-cell campaign-cell column-heading">Campaign</div>
+            <div class="table-cell column-heading">View</div>
+            <div class="table-cell  column-heading">Action</div>
+        </div>
+
+        <div class="table-row" ng-repeat="item in LiveCtrl.data">
+            <div class="table-cell date-cell">
+                <div class="table-cell--heading">Date</div>
+                <div class="table-cell--content date-content"><span
+                        class="webinar-date">{{item.date}}</span><br />{{item.daysDiff}} days</div>
+            </div>
+            <div class="table-cell campaign-cell">
+                <div class="table-cell--content title-content"><span>{{item.campaign}}</span><br /><span
+                        class="color-grey">{{item.location}}</span></div>
+            </div>
+            <div class="table-cell view-cell pointer" ng-click="LiveCtrl.viewCampaign(item)">
+                <div class="table-cell--heading">View</div>
+                <div class="table-cell--content access-link-content"><i class="material-icons">
+                        pageview
+                    </i></div>
+            </div>
+            <div class="table-cell table-cell--foot action-cell pointer">
+                <div class="table-cell--heading">Action</div>
+                <div class="table-cell--content pdf-content">
+                    <span><i class="material-icons">
+                            insert_drive_file
+                        </i></span>
+                    <span><i class="material-icons">
+                            bar_chart
+                        </i></span>
+                    <span class="date-{{$index}}" ng-click="LiveCtrl.openDatePicker($index)">
+                        <i class="material-icons">
+                            date_range
+                        </i></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+
+<div class="modal">
+    <div class="mbody">
+        <div class="campaign">{{LiveCtrl.currentCampaign.campaign}}</div>
+        <div class="country">{{LiveCtrl.currentCampaign.location}}</div>
+        <div class="element">Date: {{LiveCtrl.currentCampaign.date}}</div>
+        <div class="element">Countdown: {{LiveCtrl.currentCampaign.daysDiff}} days</div>
+        <div class="element">Price: {{LiveCtrl.currentCampaign.price}}</div>
+        <div class="close" ng-click="LiveCtrl.closePopup()">X</div>
+    </div>
+</div>
